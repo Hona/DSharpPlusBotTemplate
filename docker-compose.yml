@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  discord-bot:
+    image: template-discord-bot
+    container_name: TemplateDiscordBot
+    volumes:
+      - config:app/config
