@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TemplateDiscordBot": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
