@@ -21,8 +21,13 @@ namespace TemplateDiscordBot.Models
         [JsonPropertyName("admin_bot_channel")]
         public ulong AdminBotChannelId { get; set; }
 
-        [JsonPropertyName("seq_address")] public string SeqAddress { get; set; }
-        [JsonPropertyName("seq_token")] public string SeqToken { get; set; }
+        [HiddenConfig]
+        [JsonPropertyName("seq_address")]
+        public string SeqAddress { get; set; }
+
+        [HiddenConfig]
+        [JsonPropertyName("seq_token")]
+        public string SeqToken { get; set; }
 
         public static async Task<Configuration> LoadFromFileAsync()
         {
